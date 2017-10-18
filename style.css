@@ -1,0 +1,135 @@
+* {
+	font-family: 'Open Sans', sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	height: 100px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #3F3244;
+}
+
+header hr {
+	display: none;
+}
+
+h1,
+.student-name {
+	padding: 0 5%;
+	color: #F2F2F2;
+}
+
+h1 {
+	font-weight: 300;
+}
+
+h1 span {
+	color: #34D1D1;
+}
+
+.student-name {
+	font-weight: 600;
+}
+
+.accordion-header {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.accordion-header h3 {
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.break-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 70%;
+	height: 100px;
+}
+
+.break-container hr {
+	width: 100%;
+}
+
+.tabs {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.tab {
+	flex-grow: 1;
+	text-align: center;
+	padding: 20px;
+	border: 1px solid #FFF;
+	border-bottom-color: #D1D2D3;
+	background-color: #F2F2F2;
+	cursor: pointer;
+}
+
+#tabs--active {
+	border: 1px solid #D1D2D3;
+	border-bottom: none;
+	background-color: #FFF;
+}
+
+.accordion {
+	max-width: 800px;
+	margin: 40px auto;
+}
+
+.accordion-container {
+	border: 1px solid #D1D2D3;
+	border-top: none;
+	margin-bottom: -1px;
+	padding: 20px;
+	display: flex;
+	align-items: flex-start;
+}
+
+.placeholder-image {
+	height: 300px;
+	margin-right: 20px;
+}
+
+.accordion-title {
+	margin: 0;
+	padding: 10px 0;
+	border-bottom: 1px solid #D1D2D3;
+}
+
+.accordion-content {
+	line-height: 24px;
+	font-weight: 300;
+}
+
+.btn-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.view-code-btn {
+	background-color: #3F3244;
+	margin: 40px auto;
+	color: #FFF;
+	font-weight: 300;
+	padding: 10px;
+	width: 33%;
+	text-align: center;
+	cursor: pointer;
+	border: none;
+}
+
+.view-code-btn:focus {
+	outline: none;
+}

@@ -1,43 +1,159 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
-		<link rel="stylesheet" href="style.css">
-		<title>Pattrn Party</title>
-	</head>
-	<header>
-		<h1>PATTRN <span>PARTY</span></h1>
-		<hr>
-		<h3 class='student-name'>Jack Mallahan</h3>
-	</header>
-	<body>
-		<div class="accordion-header">
-			<h3>ACCORDION TABS</h3>
-			<div class="break-container">
-				<hr>
-			</div>
-		</div>
-		<div class="accordion">
-			<nav class="accordion-tabs">
-				<ul class="tabs">
-					<li class="tab" id="tabs--active" value="0">Tab 1<span class='tab-content-mobile' /></li>
-					<li class="tab" value="1">Tab 2<span class='tab-content-mobile' /></li>
-					<li class="tab" value="2">Tab 3<span class='tab-content-mobile' /></li>
-					<li class="tab" value="3">Tab 4<span class='tab-content-mobile' /></li>
-				</ul>
-			</nav>
-			<div class="accordion-container">
-				<img src="assets/placeholder-square.jpg" alt="An Image Placeholder" class="placeholder-image">
-				<div class="mountain-info" />
-			</div>
-		</div>
-		<div class="btn-container">
-			<button class='view-code-btn' href="">VIEW CODE</button>
-		</div>
-	</body>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="./script.js" charset="utf-8"></script>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Tab</title>
+</head>
+
+<body>
+
+    <header id="header">
+        <h1 class="title">PATTRN
+            <span class="title-alt-color">PARTY</span>
+        </h1>
+        <hr class="header-break line-break">
+        <h4 class="name">Jack Mallahan</h4>
+    </header>
+
+    <div class="subject-break">
+        <p class="subject">ACCORDION TABS</p>
+        <hr class="line-break">
+    </div>
+
+    <main id="main-content">
+        <div class="tab-container">
+            <div class="tabs">
+                <div class="nav-item is-active" data-id="tab-1">Tab 1
+                    <span class="plus">-</span>
+                </div>
+
+                <div class="content-container" id="tab-1">
+                    <img class="image" src="assets/placeholder-square.jpg" alt="placeholder-square">
+                    <div class="text-content" id="tab-1">
+                        <p class="text-title">Copper Mountain</p>
+                        <hr class="text-break">
+                        <p class="text">Copper Mountain is a mountain and ski resort located in Summit County, Colorado, about 75 miles (120 km) west of Denver on Interstate 70.
+                        </p>
+                        <p class="text">Copper Mountain is a mountain and ski resort located in Summit County, Colorado, about 75 miles (120 km) west of Denver on Interstate 70.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="nav-item" data-id="tab-2">Tab 2
+                    <span class="plus">+</span>
+                </div>
+
+                <div class="content-container is-hidden" id="tab-2">
+                    <img class="image" src="./assets/placeholder-square.jpg" alt="placeholder-square">
+                    <div class="text-content" id="tab-2">
+                        <p class="text-title">Steamboat</p>
+                        <hr class="text-break">
+
+                        <p class="text">Steamboat Resort is a major ski area in northwestern Colorado, operated by the Steamboat Ski and Resort Corporation in Steamboat Springs. It is located on Mount Werner, a mountain in the Park Range in the Routt National Forest. The ski area first opened on January 12, 1963.
+                        </p>
+                        <p class="text">Steamboat Resort is a major ski area in northwestern Colorado, operated by the Steamboat Ski and Resort Corporation in Steamboat Springs. It is located on Mount Werner, a mountain in the Park Range in the Routt National Forest. The ski area first opened on January 12, 1963.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="nav-item" data-id="tab-3">Tab 3
+                    <span class="plus">+</span>
+                </div>
+
+                <div class="content-container is-hidden" id="tab-3">
+                    <img class="image" src="./assets/placeholder-square.jpg" alt="placeholder-square">
+                    <div class="text-content" id="tab-3">
+                        <p class="text-title">Crested Butte</p>
+                        <hr class="text-break">
+                        <p class="text">
+                        Crested Butte is a home rule municipality in Gunnison County, Colorado, United States. The town population was 1,487 at the 2010 United States Census.
+                        </p>
+                        <p class="text">
+                          Crested Butte is a home rule municipality in Gunnison County, Colorado, United States. The town population was 1,487 at the 2010 United States Census.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="nav-item" data-id="tab-4">Tab 4
+                    <span class="plus">+</span>
+                </div>
+
+                <div class="content-container is-hidden" id="tab-4">
+                    <img class="image" src="./assets/placeholder-square.jpg" alt="placeholder-square">
+                    <div class="text-content" id="tab-4">
+                        <p class="text-title">Winter Park</p>
+                        <hr class="text-break">
+                        <p class="text">Winter Park Resort is an alpine ski resort in Winter Park, Colorado in the Rocky Mountains. Located just off U.S. Highway 40, the resort is about a 90-minute drive from Denver, Colorado.
+                        </p>
+                        <p class="text">
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="view-code" href="https://github.com/jackmallahan/Pattern-Party" target="_">VIEW CODE</a>
+
+        </div>
+
+    </main>
+
+    <div class="subject-break">
+        <p class="subject">FLEXIBLE CARDS</p>
+        <hr class="line-break">
+    </div>
+
+    <main id="flex-card-container">
+
+        <div class="card-flex">
+
+            <div class="card card-1">
+                <div class="card-header">Colorado Mountains</div>
+            </div>
+
+            <div class="card card-2">
+                <div class="card-header">Colorado Mountains</div>
+            </div>
+
+            <div class="card card-3">
+                <div class="card-header">Colorado Mountains</div>
+            </div>
+
+            <div class="card card-4">
+                <div class="card-header">Colorado Mountains</div>
+            </div>
+
+            <div class="card card-5">
+                <div class="card-header">Colorado Mountains</div>
+            </div>
+
+            <div class="card card-6">
+                <div class="card-header">Colorado Mountains</div>
+            </div>
+
+            <div class="card card-7">
+                <div class="card-header">Colorado Mountains</div>
+            </div>
+
+            <div class="ghost-card">
+            </div>
+
+            <div class="ghost-card">
+            </div>
+
+        </div>
+
+        <a class="view-code" href="https://github.com/jackmallahan/Pattern-Party" target="_">VIEW CODE</a>
+
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</body>
 
 </html>

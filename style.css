@@ -476,9 +476,19 @@ input {
     margin-bottom: 25px;
   }
 
+  .show a {
+    margin: 5px 0;
+  }
+
   .navigation a {
     font-size: 20px;
     width: 100%;
+  }
+
+  .last-btn {
+    position: relative;
+    bottom: -100px;
+    margin: 50px auto;
   }
 
   input {

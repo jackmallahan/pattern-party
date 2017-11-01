@@ -6,3 +6,5 @@ $('.nav-item').on('click', (e) => {
     $(e.target).find('.plus').text('-')
     $("#" + $(e.target).attr('data-id')).removeClass('is-hidden');
 });
+
+$('.menu').click(() => $('.navigation').toggleClass('show'))
